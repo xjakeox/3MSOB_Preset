@@ -1,6 +1,26 @@
-#include "VAS\menu.hpp"
+// Basics
 
+class header
+{
+	gametype = coop;
+	maxplayers = 1;
+	minplayers = 1;
+};
+
+
+respawn = 3;
+respawndelay = 6;
+
+//Disable AI
+// 1 - Disables AI from playable characters
+// 0 - Enables AI from playable characters
+disabledAI = 1;
+
+// Custom Script Code
+#include "taw_vd\dialog.hpp"
+#include "ASORGS\menu.hpp"
 class CfgFunctions
 {
-	#include "VAS\cfgfunctions.hpp"
+	#include "ASORGS\cfgfunctions.hpp"
+	#include "taw_vd\CfgFunctions.hpp"
 };
